@@ -1,0 +1,12 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 22px;
+    margin: 20px;
+    @media (width > 800px) {
+        gap: 50px;
+        margin: 45px 100px;
+    
+    }
+}
