@@ -7,22 +7,21 @@ function Gallery() {
     const [logements, setLogements] = useState([])
 
     useEffect(() => {
-         const getLogements = async () => {
+        const getLogements = async () => {
             try {
                 const response = await fetch(`/logements.json`)
                 const data = await response.json()
                 setLogements(data)
-
             } catch (error) {
                 console.log(error)
             }
-         }
-         getLogements()
-     }, [])
+        }
+        getLogements()
+    }, [])
 
     return (
         <main className='homepage'>
-            {logements.map(logement => 
+            {logements?.map(logement => 
             <Link to={`fiche/${logement.id}`} key={logement.id} >
                 <Card 
                 cover={logement.cover}

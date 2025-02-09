@@ -5,7 +5,7 @@ import './App.scss'
 function App() {
   return (
     <>
-      <Hero />
+      <Hero heroImage={"./src/assets/hero-bg.png"} heroText={"Chez vous, partout et ailleurs"} isDark={true} />
       <Gallery />
     </>
   );

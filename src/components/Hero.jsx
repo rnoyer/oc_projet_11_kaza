@@ -1,11 +1,13 @@
 import './Hero.scss'
 
-function Hero() {
+function Hero({ heroImage, heroText, isDark }) {
     return(
-        <div className='hero homepage'>
-        <h1>
-            Chez vous, <wbr />partout et ailleurs
-        </h1>
+        <div className='hero'>
+            <img src={heroImage} alt="" />
+            <div className={ isDark ? 'hero--gradient-dark' : 'hero--gradient-light'}></div>
+            <h1>
+                {heroText}
+            </h1>
         </div>
     )
 }
