@@ -2,6 +2,8 @@ import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 import './Fiche.scss'
 import Dropdown from "../components/Dropdown"
+import Tag from "../components/Tag"
+import RatingStars from "../components/RatingStars"
 
 function Fiche() {
     const { id } = useParams()
@@ -24,16 +26,16 @@ function Fiche() {
     
     return(
         <>
-            <h1>Fiche appartement</h1>
-            <p>{fiche.title}</p>
             <p>{fiche.cover}</p>
-            {/* <p>{fiche.pictures}</p> */}
-            {/* <p>{fiche.host}</p> */}
-            <p>{fiche.rating}</p>
+            <h3>{fiche.title}</h3>
             <p>{fiche.location}</p>
+            {fiche.tags?.map(e => <Tag tagName={e} key={e}/>)}
+            <RatingStars starNumber={fiche.rating} />
+            {/* <p>{fiche.host.name}</p>
+            <p>{fiche.host.picture}</p> */}
+
             <Dropdown title="Description" content={fiche.description}/>
             <Dropdown title="Equipements" content={<ul>{fiche.equipments?.map(e => <li key={e}>{e}</li>)}</ul>}/>
-            {/* <p>{fiche.tags}</p> */}
         </>
     )
 }
