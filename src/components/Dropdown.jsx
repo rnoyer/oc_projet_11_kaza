@@ -4,7 +4,7 @@ function Dropdown ({title, content}) {
     return (
         <details>
             <summary>{title}</summary>
-            {content}
+            <div className="detail-content">{content}</div>
         </details>
     )
 
