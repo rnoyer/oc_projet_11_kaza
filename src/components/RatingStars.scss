@@ -1,0 +1,10 @@
+.rating {
+    display: flex;
+    gap: 8px;
+    svg {
+        width: 13px;
+        @media (width > 800px) {
+            width: 24px;
+        }
+    }
+}

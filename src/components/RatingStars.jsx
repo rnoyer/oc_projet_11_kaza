@@ -15,7 +15,7 @@ function RatingStars ({starNumber}) {
     }
 
     return (
-        <p>{starsArray().map(e => <Star isRed={e.value} key={e.key}/>)}</p>
+        <div className="rating">{starsArray().map(e => <Star isRed={e.value} key={e.key}/>)}</div>
     )
 }
 

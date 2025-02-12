@@ -2,9 +2,8 @@ import "./Tag.scss"
 
 function Tag ({tagName}) {
     return (
-        <p>{tagName}</p>
+        <div className="tag">{tagName}</div>
     )
-
 }
 
 export default Tag

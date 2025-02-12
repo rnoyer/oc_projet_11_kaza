@@ -1,0 +1,27 @@
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    .host-infos {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+h3 {
+    color: #FF6060;
+    font-weight: 500;
+    font-size: 18px;
+    @media (width > 800px) {
+        font-size: 36px;
+    }
+}
+
+p {
+    font-weight: 500;
+    font-size: 14px;
+    @media (width > 800px) {
+        font-size: 18px;
+    }
+}

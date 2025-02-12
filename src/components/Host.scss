@@ -1,0 +1,25 @@
+.host {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    img {
+        object-fit: cover;
+        width: 32px;
+        height: 32px;
+        border-radius: 999px;
+        @media (width > 800px) {
+            width: 64px;
+            height: 64px;
+        }
+    }
+    p {
+        font-size: 12px;
+        text-align: right;
+        color: #FF6060;
+        width: min-content;
+        margin: unset;
+        @media (width > 800px) {
+            font-size: 18px;
+        }
+    }
+}
