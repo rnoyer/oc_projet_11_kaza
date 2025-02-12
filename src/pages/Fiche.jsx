@@ -18,7 +18,6 @@ function Fiche() {
                const response = await fetch(`/logements.json`)
                const data = await response.json()
                setFiche(data.find((element) => element.id === id))
-
            } catch (error) {
                console.log(error)
            }

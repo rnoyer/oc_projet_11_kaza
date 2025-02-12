@@ -20,9 +20,13 @@ details {
         font-size: 12px;
         margin: unset;
         padding: 13px 20px;
+        @media (width > 800px) {
+            font-size: 18px;
+        }
     }
     ul {
         padding: unset;
+        margin: unset;
     }
     li {
         list-style: none;
@@ -36,7 +40,12 @@ details {
         color: white;
         background-color: #FF6060;
         padding: 10px;
+        border-radius: 5px;
         list-style: none;
+        @media (width > 800px) {
+            font-size: 24px;
+            padding: 15px;
+        }
         &::after {
             content: '';
             width: 16px;
@@ -44,6 +53,10 @@ details {
             background: url('../assets/arrow-up.svg');
             background-size: cover;
             transition: 0.2s;
+            @media (width > 800px) {
+                width: 24px;
+                height: 14px;
+            }
         }
     }
 }
