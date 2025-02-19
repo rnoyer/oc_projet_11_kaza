@@ -17,6 +17,7 @@ createRoot(document.getElementById('root')).render(
           <Route path='/' element={<App />} />
           <Route path='/fiche/:id' element={<Fiche />} />
           <Route path='/apropos' element={<Apropos />} />
+          <Route path='/404' element={<Err404 />} />
           <Route path='*' element={<Err404 />} />
         </Route>
       </Routes>
