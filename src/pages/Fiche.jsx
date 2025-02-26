@@ -22,7 +22,7 @@ function Fiche() {
                !!ficheInfos ? setFiche(ficheInfos) : navigate("/404")
            } catch (error) {
                 navigate("/404")
-               console.log(error)
+                console.log(error)
            }
         }
         getFiche()
