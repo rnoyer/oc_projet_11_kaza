@@ -2,6 +2,7 @@ import './Apropos.scss'
 import { useState, useEffect } from 'react'
 import Hero from "../components/Hero"
 import Dropdown from '../components/Dropdown'
+import aProposHero from "../assets/apropos-bg.png"
 
 function Apropos() {
     const [dropdownData, setDropdownData] = useState()
@@ -21,7 +22,7 @@ function Apropos() {
 
     return(
         <>
-            <Hero heroImage={"../src/assets/apropos-bg.png"} isDark={false} />
+            <Hero heroImage={aProposHero} isDark={false} />
             {dropdownData?.map( element => 
                 <Dropdown key={element.title} title={element.title} content={element.content} />
             )}
